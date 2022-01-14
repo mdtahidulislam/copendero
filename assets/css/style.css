@@ -1,0 +1,190 @@
+/* reset css */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+p {
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+input:focus, 
+select:focus, 
+button:focus, 
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: gainsboro !important;
+}
+select {
+    cursor: pointer;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Root variable */
+:root {
+	/* --ss-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Merriweather Sans', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+    --cd-font-primary: 'Roboto', sans-serif;
+    
+    /* color */
+    --cd-red: #CC0000;
+    --cd-black: #000000;
+    --cd-white: #ffffff;
+
+    /* font-size */
+    --cd-font-xss: 12px;
+    --cd-font-xs: 14px;
+    --cd-font-s: 16px;
+    --cd-font-m: 18px;
+    --cd-font-l: 20px;
+    --cd-font-xl: 30px;
+    --cd-font-xll: 60px;
+}
+
+html, body{
+    scroll-behavior: smooth !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*================ common-css =================*/
+.section-title {
+    
+}
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* -------- bg color -------- */
+
+/* -------- text color -------- */
+
+/* opacity */
+.opacity-100{
+    opacity: 0.1;
+}
+.opacity-200{
+    opacity: 0.2;
+}
+.opacity-300{
+    opacity: 0.3;
+}
+.opacity-400{
+    opacity: 0.4;
+}
+.opacity-500{
+    opacity: 0.5;
+}
+.opacity-600{
+    opacity: 0.6;
+}
+.opacity-700{
+    opacity: 0.7;
+}
+.opacity-800{
+    opacity: 0.8;
+}
+.opacity-900{
+    opacity: 0.9;
+}
+/* -------- font size */
+.font-xss {
+    font-size: var(--cd-font-xss);
+}
+.font-xs {
+    font-size: var(--cd-font-xs);
+}
+.font-s {
+    font-size: var(--cd-font-s);
+}
+.font-m {
+    font-size: var(--cd-font-m);
+}
+.font-l {
+    font-size: var(--cd-font-l);
+}
+.font-xl {
+    font-size: var(--cd-font-xl);
+}
+.font-xll {
+    font-size: var(--cd-text-xll);
+}
+/* --------- font weight */
+.font-light{
+    font-weight: 300;
+}
+.font-regular{
+    font-weight: 400;
+}
+.font-medium{
+    font-weight: 500;
+}
+.font-bold{
+    font-weight: 700;
+}
+.font-extra-bold{
+    font-weight: 900;
+}
+/* ----------- text indent */
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/* -------- border -------- */
+
+/* ---------- btn ---------- */
+.btn-primary{
+    background-color: var(--cd-red);
+    padding: 8px 10px;
+}
+.btn-custom{
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: var(--cd-font-m);
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 10px 16px;
+}
+.btn-custom__red{
+    background-color: var(--cd-red);
+}
+.box-shadow-none {
+    box-shadow: none !important;
+}
+
+body{
+    font-family: var(--cd-font-primary);
+    background-color: var(--cd-white);
+    font-size: var(--cd-text-s);
+    -webkit-font-smoothing: antialiased;
+}
+
+.inherit-hover:hover{
+    color: inherit;
+}
+.light-hover:hover{
+    color: #fff;
+}
+.no-transition{
+    transition: unset;
+}
+
+/* ============ header css  =================================== */
