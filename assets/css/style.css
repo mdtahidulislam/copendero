@@ -302,7 +302,7 @@ a.header-social_link:hover {
 }
 /* offering-1 */
 .offering-1 {
-    padding: 150px 0;
+    padding: 150px 0 0;
     position: relative;
 }
 .offering-1-text {
@@ -326,12 +326,12 @@ a.header-social_link:hover {
     object-fit: cover;
     width: 100%;
 }
-.bullet-item {
+.red-line-list {
     padding-left: 30px;
     margin-left: 110px;
     position: relative;
 }
-.bullet-item:before {
+.red-line-list:before {
     content: '';
     position: absolute;
     top: 0;
@@ -340,14 +340,13 @@ a.header-social_link:hover {
     height: 3px;
     background-color: var(--cd-red);
 }
-.bullet-item li {
+.bullet-item > li {
     position: relative;
     padding-left: 10px;
     margin-bottom: 24px;
     font-size: var(--cd-font-l);
 }
-
-.bullet-item li:before {
+.bullet-item > li:before {
     content: '';
     width: 5px;
     height: 5px;
@@ -355,6 +354,92 @@ a.header-social_link:hover {
     background: red;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 10px;
+}
+
+
+/* offering 2 */
+.offering-2 {
+    margin-top: -100px;
+    padding-bottom: 133px;
+}
+.offering-2-img {
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+    flex: 1;
+}
+
+.offering-2-img__box {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.33%;
+}
+
+.offering-2-img__box img {
+    width: 100%;
+}
+
+.offering-2-text {
+    max-width: 795px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 3%;
+}
+
+/* see soon */
+.see-soon {
+    padding-bottom: 150px;
+}
+article.see-soon-article {
+    /* max-width: 550px; */
+    /* width: 100%; */
+    padding-left: 10%;
+    width: 667px;
+    flex: 0 0 auto;
+}
+article.see-soon-article h1 {
+    margin-bottom: 55px;
+}
+.see-soon-img-box {
+    position: relative;
+}
+.soon-big-img {
+    width: 100%;
+}
+
+.soon-front-img {
+    position: absolute;
+    left: -55px;
+    top: 56%;
     transform: translateY(-50%);
+}
+
+.see-soon-img {
+    flex: 1;
+    padding-left: 146px;
+}
+
+/* location css */
+.location-wrapper > div {
+    width: 50%;
+}
+h2.location-title {
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+h2.location-title:after {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: rotateX(45deg);
+}
+.location-map img {
+    width: 100%;
 }
