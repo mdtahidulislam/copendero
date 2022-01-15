@@ -255,6 +255,7 @@ a.header-social_link:hover {
     transform: translate(-50%, -50%);
     z-index: 99;
     padding: 0 15px;
+    margin-top: 35px;
 }
 .banner-article__title {
     margin-bottom: 53px;
