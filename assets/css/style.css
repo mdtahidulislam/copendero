@@ -254,11 +254,13 @@ a.header-social_link:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
+    padding: 0 15px;
 }
 .banner-article__title {
     margin-bottom: 53px;
 }
 .banner-article__subtitle {
+    line-height: 33px;
     margin-bottom: 48px;
 }
 .banner-form {
@@ -424,6 +426,9 @@ article.see-soon-article h1 {
 .location-wrapper > div {
     width: 50%;
 }
+.location-address {
+    padding: 45px;
+}
 h2.location-title {
     position: relative;
     padding-bottom: 40px;
@@ -438,7 +443,7 @@ h2.location-title:after {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: rotateX(45deg);
+    transform: translateX(-50%);
 }
 .location-map img {
     width: 100%;
